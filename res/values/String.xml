@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">登陆</string>
+    <string name="user_hint">账号</string>
+    <string name="password_hint">密码</string>
+    <string name="register">注册</string>
+    <string name="find_password">忘记密码？</string>
+    <drawable name="clr_normal">#0078DD</drawable>
+ 	<drawable name="clr_pressed">#005BA1</drawable>
+ 	<drawable name="more_pressed">#e0000000</drawable>
+ 	<drawable name="more_normal">#00000000</drawable>
+</resources>

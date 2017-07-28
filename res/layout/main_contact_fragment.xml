@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#0078DD"
+        android:layout_gravity="center"
+        >
+        <ImageView
+	        android:id="@+id/head_image"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/default_personal_image"
+	        android:layout_marginLeft="40dp"
+	        
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        android:width="50dp" />
+	    <TextView
+	        android:id="@+id/title"
+	        android:text="联系人"
+	        android:textColor="#FFFFFF"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="20dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        />  
+	    <ImageView
+	        android:id="@+id/add_friend"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/addfriend"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:width="50dp" 
+	        android:layout_marginRight="40dp"
+	        android:layout_gravity="center|right"
+	        android:layout_marginBottom="10dp"
+	        />
+    </LinearLayout>
+    
+    <com.chat.view.MyScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+	    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            
+            <EditText 
+		        android:id="@+id/search_contact"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:maxLines="1"
+		        android:ellipsize="end"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:background="@drawable/edittext_normal_normal"
+		        android:gravity="center"
+		        android:hint="搜索"
+		        android:textSize="16sp"
+		        />
+            
+            <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="80dp"
+	        android:orientation="horizontal"
+	        >
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+	            android:orientation="vertical"
+	            >
+	            
+	            <ImageView 
+		            android:id="@+id/new_friend"
+		            android:layout_width="60dp"
+		            android:layout_height="60dp"
+		            android:src="@drawable/new_friend"
+		            />
+	            
+	            <TextView 
+	                android:text="新朋友"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:textSize="16sp"
+	                />
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+	            android:orientation="vertical"
+	            >
+	            
+	            <ImageView 
+		            android:id="@+id/chat_group"
+		            android:layout_width="60dp"
+		            android:layout_height="60dp"
+		            android:src="@drawable/chat_group"
+		            />
+	            
+	            <TextView 
+	                android:text="群聊"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:textSize="16sp"
+	                />
+	            
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+            
+            <com.chat.view.MyListView
+                android:id="@+id/contact_information"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.chat.view.MyListView>
+            
+        </LinearLayout>
+        
+	</com.chat.view.MyScrollView>
+
+</LinearLayout>
